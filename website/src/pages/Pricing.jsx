@@ -141,16 +141,16 @@ export default function Pricing() {
                 <h3>{p.name}</h3>
                 <p className="pricing-tagline">{p.tagline}</p>
                 <div className="pricing-amount">
-                  <span className="pricing-currency">$</span>
+                  <span className="pricing-currency">₹</span>
                   <span className="pricing-number">
-                    {yearly ? Math.round(p.yearly / 12) : p.monthly}
+                    {yearly ? Math.round((p.yearly * 100) / 12) : (p.monthly*100)}
                   </span>
                   <span className="pricing-period">
                     /mo{p.priceNote ? `, ${p.priceNote}` : ""}
                   </span>
                 </div>
                 {yearly && p.yearly > 0 && (
-                  <p className="pricing-billed">Billed ${p.yearly} yearly</p>
+                  <p className="pricing-billed">Billed {p.yearly} yearly</p>
                 )}
                 <Link
                   to={p.name === "Teams" ? "/contact" : "/setup"}
