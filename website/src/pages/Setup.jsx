@@ -121,35 +121,6 @@ export default function Setup() {
         </div>
       </section>
 
-      <section className="section dev-install-section">
-        <div className="container">
-          <div className="dev-install card">
-            <div className="dev-install-head">
-              <span className="eyebrow">For testers & developers</span>
-              <h2>Load it unpacked, before the store listing goes live</h2>
-              <p>
-                If you have access to the source build, you can load NeuroAccess
-                as an unpacked extension in Chrome for early testing.
-              </p>
-            </div>
-            <ol className="dev-install-steps">
-              <li>Download or clone the extension source to your machine.</li>
-              <li>
-                Open <code>chrome://extensions</code> in Chrome.
-              </li>
-              <li>
-                Turn on <strong>Developer mode</strong> in the top-right corner.
-              </li>
-              <li>
-                Click <strong>Load unpacked</strong> and select the extension's{" "}
-                <code>dist/</code> folder.
-              </li>
-              <li>Pin NeuroAccess from the toolbar puzzle-piece menu.</li>
-            </ol>
-          </div>
-        </div>
-      </section>
-
       <section className="section">
         <div className="container">
           <div className="cta-banner">
