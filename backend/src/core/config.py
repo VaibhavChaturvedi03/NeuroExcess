@@ -6,8 +6,9 @@ class Settings(BaseSettings):
     # ── HuggingFace API (used for image captioning only) ──────
     HF_API_KEY: str
 
-    # Image captioning model (BLIP)
-    HF_CAPTION_MODEL: str = "Salesforce/blip-image-captioning-large"
+    # Image captioning models (Primary: BLIP-base 247M, Fallback: ViT-GPT2 239M)
+    HF_CAPTION_MODEL: str = "Salesforce/blip-image-captioning-base"
+    HF_CAPTION_FALLBACK_MODEL: str = "nlpconnect/vit-gpt2-image-captioning"
 
     # Timeout for HuggingFace API calls (seconds)
     HF_TIMEOUT: int = 90

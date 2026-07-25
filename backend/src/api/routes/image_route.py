@@ -146,5 +146,6 @@ async def health():
         "ocr_engine": "easyocr",
         "ocr_available": ocr_service.is_available(),
         "ocr_language": ocr_service.language,
-        "captioning_model": image_caption_service.url,
+        "captioning_model": image_caption_service.primary_model,
+        "fallback_model": image_caption_service.fallback_model,
     }
